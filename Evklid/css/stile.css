@@ -1,3 +1,26 @@
+/* SETUP SECTION */
+
+body, html {
+    margin: 0;
+    overflow-x: hidden;
+}
+h1, h2, h3 , h4, h5, p {
+    margin: 0;
+}
+
+.navbar,
+.header-wrapper, 
+.about_us-wrapper,
+.benefits-wrapper,
+.how_we_work-wrapper,
+.questions-wrapper,
+.footer-wrapper
+ {
+    max-width: 1770px;
+    margin: auto;
+}
+/* NAVBAR SECTION */
+
 .navbar {
     display: flex;
     align-items: center;
@@ -7,91 +30,94 @@
 }
 
 .navbar__logo { 
-    background-image: url(../img/Logo.png);
-    height: 73px;
-    width: 224px;
-    margin-left: 75px;
+    display: flex;
 }
 
 .navbar__menu {
     display: flex;
 }
 
-.navbar__menu__aboutus {
+.navbar__menu > *:not(:last-child) {
     margin-right: 85px;
     color: #333;
+    font-weight: 600;
+    font-size: 18px;
 }
 
-.navbar__menu__projects {
-    margin-right: 85px;
-    color: #333;
-}
-
-.navbar__menu__stages {
-    margin-right: 85px;
-    color: #333;
-}
-
-.navbar__menu__comments {
-    margin-right: 85px;
-    color: #333;
-}
-
-.navbar__menu__contacts {
-    margin-right: 85px;
-    color: #333;
-}
-
-.navbar__menu__search {
-    margin-right: auto;
+/* HEADER SECTION */
+.header {
+    margin-bottom: 100px;
 }
 
 .header-wrapper {
-    width: 1770px;
-    height: 620px;
+
+    background-image: url(../img/header-slayder1.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    position: relative;
+} 
+
+.header-wrapper-herobox {
+    width: 100%;
+    padding: 100px 0 100px 80px ;
 }
 
-    .header-wrapper-herobox {
-        position: absolute;
-        background-image: url(../img/header-slayder1.jpg);
-        background-repeat: no-repeat;
-        width: 100%;
-        height: 620px;
-        margin: 0 75px;
-    }
+.header-wrapper-herobox > h1 {
+    font-size: 70px;
+    line-height: 85.33px;
+    width: 20ch;
+    color: white;
+    margin-bottom: 20px;
+}
 
-    .h1-header-wrapper-herobox {
-        margin: 0;
-        margin-top: 100px;
-        margin-left: 80px;
-        font-size: 70px;
-        line-height: 85.33px;
-        width: 20ch;
-        color: white;
-    }
+.header-wrapper-herobox > p {
+    font-size: 24px;
+    line-height: 29.26px;
+    width: 55ch;
+    color: white;
+    margin-bottom: 90px;
+}
 
-    .p-header-wrapper-herobox {
-        margin: 0;
-        margin-top: 24px;
-        margin-left: 80px;
-        font-size: 24px;
-        line-height: 29.26px;
-        width: 55ch;
-        color: white;
-    }
+.header-wrapper-herobox > button {
+    font-size: 23.46px;
+    color: white;
+    padding: 24.83px 36.88px;
+    background-color: #FF9900;
+    border-style: none;
+    cursor: pointer;
+}
 
-    .button-header-wrapper-herobox {
-        margin: 0;
-        margin-top: 90px;
-        margin-left: 80px;
-        font-size: 23.46px;
-        color: white;
-        padding: 24.83px 36.88px;
-        background-color: #FF9900;
-        border-style: none;
-    }
+.header-menu {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
 
-.about_us-wrapper {
+.header-menu > * {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.4);
+    display: inline-block;
+    cursor: pointer;
+}
+
+.header-menu__item.active {
+    background-color: #fff;
+}
+
+.header-menu > *:not(:last-child) {
+    margin-right: 20px;
+}
+
+/* ABOUT US SECTION */
+
+.about_us {
+    margin-bottom: 50px;
+}
+/* .about_us-wrapper {
     width: 1770px;
 }
 
@@ -109,10 +135,12 @@
     font-size: 16px;
     width: 1235px;
 }
+/* BENEFITS SECTION */
 
 .benefits {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    margin-bottom: 100px;
 }
 
 .benefits-wrapper {
@@ -126,16 +154,11 @@
     background-repeat: no-repeat;
     width: 868px;
     height: 622px;
-    /* margin-left: 75px;
-    margin-right: 0; */
-    margin-top: 50px;
 }
 
 .benefits-wrapper-attention__footer {
     position: absolute;
     bottom: 0;
-    width: 868px;
-    height: 196px;
     background-color: #00000080;
 }
 
@@ -173,4 +196,4 @@
 .benefits-wrapper-options {
     width: 870px;
     height: 622px;
-}
+} */
