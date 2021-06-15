@@ -5,13 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/stile.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <!-- nav.navbar>.navbar__logo+.navbar__menu>.navbar__menu__aboutus+.navbar__menu__projects+.navbar__menu__stages+.navbar__menu__comments+.navbar__menu__contacts+.navbar__menu__sesrch -->
     <nav class="navbar">
         <div class="navbar__logo">
+            <div class="navbar__logo__icon">
+                <svg width="39" height="72" viewBox="0 0 39 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.34487 42.7145L17.3506 24.2755H20.0364V29.4921L14.3549 42.7145H18.5902V40.3386C18.5902 39.7601 19.5543 39.7188 20.0364 39.7704V47.0531C18.7142 47.0531 18.5213 46.6055 18.5902 46.3816V44.3156H13.5802L1.18418 72H0.71933L3.86998 62.4448C3.86998 62.4448 1.08088 61.3601 2.01058 59.0359C2.94028 56.7116 8.51847 44.3156 8.51847 44.3156H2.01058V42.7145H9.34487Z" fill="url(#paint0_linear)"/>
+                    <path d="M30.2114 42.7145L22.2057 24.2755H19.5199V29.4921L25.2014 42.7145H20.9661V40.3386C20.9661 39.7601 20.002 39.7188 19.5199 39.7704V47.0531C20.8421 47.0531 21.035 46.6055 20.9661 46.3816V44.3156H25.9761L38.3721 72H38.837L35.6863 62.4448C35.6863 62.4448 38.4754 61.3601 37.5457 59.0359C36.616 56.7116 31.0378 44.3156 31.0378 44.3156H37.5457V42.7145H30.2114Z" fill="url(#paint1_linear)"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M19.8298 21.5897C22.8535 21.5897 25.3047 19.1385 25.3047 16.1148C25.3047 13.0911 22.8535 10.6399 19.8298 10.6399C16.8061 10.6399 14.3549 13.0911 14.3549 16.1148C14.3549 19.1385 16.8061 21.5897 19.8298 21.5897ZM19.8298 24.5854C24.508 24.5854 28.3004 20.793 28.3004 16.1148C28.3004 11.4366 24.508 7.64419 19.8298 7.64419C15.1517 7.64419 11.3593 11.4366 11.3593 16.1148C11.3593 20.793 15.1517 24.5854 19.8298 24.5854Z" fill="#333333"/>
+                    <path d="M18.2803 0H21.3793V8.16069H18.2803V0Z" fill="#333333"/>
+                    <defs>
+                    <linearGradient id="paint0_linear" x1="19.7782" y1="24.2755" x2="19.7782" y2="72" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#FFA948"/>
+                    <stop offset="0.515625" stop-color="#FF6E14"/>
+                    </linearGradient>
+                    <linearGradient id="paint1_linear" x1="19.7782" y1="24.2755" x2="19.7782" y2="72" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#FFA948"/>
+                    <stop offset="0.515625" stop-color="#FF6E14"/>
+                    </linearGradient>
+                    </defs>
+                    </svg>
+            </div>
+            <div class="navbar__logo__text">
+                <!-- <div class="header">Евклид</div>
+                <div class="subheader">Проектные системы</div> -->
+            </div>
         </div>
         <div class="navbar__menu">
             <div class="navbar__menu__aboutus">
@@ -30,6 +52,12 @@
                 Контакты
             </div>
             <div class="navbar__menu__search">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="7.56126" height="1.89031" transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6062 17.3762)" fill="#333333"/>
+                    <path d="M20.9303 10.7726C20.9303 16.1533 16.4855 20.5452 10.9652 20.5452C5.44478 20.5452 1 16.1533 1 10.7726C1 5.39198 5.44478 1 10.9652 1C16.4855 1 20.9303 5.39198 20.9303 10.7726Z" stroke="#333333" stroke-width="2"/>
+                    </svg>
+                    
+                    
             </div>
         </div>
     </nav>
@@ -37,9 +65,13 @@
     <main class="header">
         <div class="header-wrapper">
             <div class="header-wrapper-herobox">
-                <h1 class="h1-header-wrapper-herobox">Проектные решения любой сложности</h1>
-                <p class="p-header-wrapper-herobox">Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов</p>
-                <button class="button-header-wrapper-herobox">Заказать расчёт</button>
+                <h1>Проектные решения любой сложности</h1>
+                <p>Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов</p>
+                <button>Заказать расчёт</button>
+            </div>
+            <div class="header-menu">
+                <span class="header-menu__item active"></span><span class="header-menu__item"></span><span class="header-menu__item"></span>
+            </div>
         </div>
     </main>
     <section class="about_us">
@@ -189,20 +221,20 @@
                     <a href="#"></a>
                 </div>
             </div>
-        </div>
-        <div class="futter-order">
-            <h2>Оставить заявку</h2>
-            <form action="">
-                <input type="text" class="footer-contakt-form-name" placeholder="Фамилия, имя и отчество*">
-                <input type="email" class="footer-contakt-form-email" placeholder="E-mail*">
-                <input type="text" class="footer-contakt-form-message" placeholder="Сообщение">
-                <input type="submit" value="Отправить данные" class="footer-contakt-form-submit">
-                <input type="checkbox" checked>
-                <span>Согласен на обработку данных</span>
-            </form>
-        </div>
-        <div class="footer-text">
-            <p>Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: разбавленное изрядной долей эмпатии, рациональное мышление позволяет оценить значение модели развития. Таким образом, консультация с широким активом обеспечивает широкому кругу (специалистов) участие в формировании стандартных подходов. </p>
+            <div class="footer-order">
+                <h2>Оставить заявку</h2>
+                <form action="">
+                    <input type="text" class="footer-contakt-form-name" placeholder="Фамилия, имя и отчество*">
+                    <input type="email" class="footer-contakt-form-email" placeholder="E-mail*">
+                    <input type="text" class="footer-contakt-form-message" placeholder="Сообщение">
+                    <input type="submit" value="Отправить данные" class="footer-contakt-form-submit">
+                    <input type="checkbox" checked>
+                    <span>Согласен на обработку данных</span>
+                </form>
+            </div>
+            <div class="footer-text">
+                <p>Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: разбавленное изрядной долей эмпатии, рациональное мышление позволяет оценить значение модели развития. Таким образом, консультация с широким активом обеспечивает широкому кругу (специалистов) участие в формировании стандартных подходов. </p>
+            </div>
         </div>
     </sektion>
 </body>
